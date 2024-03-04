@@ -1,5 +1,5 @@
-const loadCard = async () => {
-    const res = await fetch('https://openapi.programming-hero.com/api/retro-forum/posts');
+const loadCard = async (searchText) => {
+    const res = await fetch(`https://openapi.programming-hero.com/api/retro-forum/posts`);
     const data = await res.json();
     const cards = data;
     displayCards(cards);
@@ -7,6 +7,8 @@ const loadCard = async () => {
 const displayCards = cards => {
     // console.log(card)
     const cardContainer1 = document.getElementById('card-container');
+
+    cardContainer1.textContent ='';
 
     cards.posts.forEach((card) => {
         console.log(card);
@@ -38,7 +40,27 @@ const displayCards = cards => {
          `;
         cardContainer1.appendChild(cardContainer);
     });
+     toggleLoadingSpinner(false);
+
+}
+// handle search button
+const handleSearch = () => {
+  toggleLoadingSpinner(true);
+  const searchField = document.getElementById('search-field')
+  const searchText = searchField.value;
+  console.log(searchText);
+  loadCard(searchText);
 }
 
-loadCard();
+const toggleLoadingSpinner = (isLoading) => {
+  const loadingSpinner = document.getElementById('loading-spinner');
+  if(isLoading){
+    loadingSpinner.classList.remove('hidden')
+  }
+  else{
+    loadingSpinner.classList.add('hidden')
+  }
+}
+
+// loadCard();
 /**************************************************************************************** */
