@@ -13,10 +13,10 @@
   <header>
     <!-- Navbar -->
     <div class="navbar bg-base-100">
-      <div class="flex-1">
+      <div class="flex-1 sm:flex">
         <a class="btn btn-ghost text-5xl">MeTro</a>
       </div>
-      <div class="flex gap-2">
+      <div class="flex gap-2 sm:flex">
         <div class="dropdown dropdown-end">
           <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
             <div>
@@ -33,7 +33,7 @@
       </div>
     </div>
     <!-- Banner section -->
-    <div class="flex bg-[#12132D]">
+    <div class="flex bg-[#12132D] ">
       <div class="p-5 text-[#FFFFFFCC] top-24 text-5xl  font-extrabold ml-32 text-center"> 
         <h1>
         <p>Welcome to the<br> <span class="text-blue-600">MeTro</span> Forum</p>
@@ -41,14 +41,14 @@
       <p class="text-xl mt-4">MeTro Forum, a hub for insightful discussions, <br> and boundless exploration of
         diverse ideas.</p>
         <!-- search -->
-      <section class="flex bg-slate-100 m-4">
+      <section class="flex bg-slate-100 m-4 ">
           <input id="search-field" type="text" class="input input-bordered" placeholder="search here anything" />
         <button onclick="handleSearch()" class="btn btn-info w-2/4 text-xl font-bold">Search</button>
       </section>
       <!-- spinner -->
       <span id="loading-spinner" class=" hidden loading loading-dots text-primary loading-lg"></span>
     </div>
-      <div class="ml-72 mt-14">
+      <div class="ml-72 mt-14 flex-col sm:flex-row ">
         <label class="input input-bordered flex items-center gap-2">
           Registered Users
           <input type="text" class="grow" placeholder="" />
@@ -86,27 +86,6 @@
       </div>
       <!-- Lets discuss part -->
        <div id="card-container" class="bg-[#797DFC1A] rounded-sm ">
-        <!-- <div class="flex ml-8">
-          <div>
-            <img  src="images/Status.png" alt=""><span><img src="images/Rectangle 4.png" alt=""></span>
-          </div>
-          <div class="bg-[ #797DFC1A] ml-5">
-            <P class="text-xl mt-5">#Music<span class="ml-6">Author : Awlad Hossain</span></P>
-            <h1 class="p-2 text-2xl font-bold">10 Kids Unaware of Their Halloween Costume</h1><br>
-            <p class="text-xl">It's one thing to subject yourself to ha Halloween costume mishap because,<br> hey that’s your prerogative</p>
-          </div>
-        </div>
-        <div class="flex gap-52 p-10">
-          <div class="flex">
-            <img src="images/Vector.png" alt=""><span class="ml-2 mr-1">560</span>
-            <img src="images/Group 16.png" alt=""><span class="ml-2 mr-1">1560</span>
-            <img src="images/Group 18.png" alt=""><span class="ml-2 mr-1">5min</span>
-          </div>
-          <div>
-            <b
-            <img src="images/Vector (1).png" alt="">
-          </div>
-        </div> -->
       </div> 
     </section>
     <!--  -->
@@ -139,8 +118,23 @@
           Explore the freshest discussions, insights, and discoveries shared<br>by our vibrant community in our forum's
           latest posts,<br> where knowledge meets curiosity and sparks fly.</P>
       </div>
-      <!--  -->
-      <div id="phone-container" class="m-8 mt-5 bg-[#FFFFFFCC]">
+      <div id="phone-cont" class="card w-96 bg-base-100 shadow-xl">
+        <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+        <div class="card-body">
+          <p><img src="images/Vector.png" alt=""><span> 29 January,2024</span></p>
+          <h2 class="card-title">
+            Shoes!
+            <div class="badge badge-secondary">NEW</div>
+          </h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions">
+             <img src="images/Ellipse 1.png" alt="">Fashion <br>Products</div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!--   -->
+      <!-- <div id="phone-container" class="m-8 mt-5 bg-[#FFFFFFCC]">
         <div>
           <img class="w-36" src="images/home_263115.png" alt="" srcset="">
         </div>
@@ -167,9 +161,9 @@
             </div>
         </div>
         </div>
-      </div>
+      <!-- </div>  -->
 
-    </section>
+  
     <!-- static part end -->
   </main>
   <!-- Footer  -->

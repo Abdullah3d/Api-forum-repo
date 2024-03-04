@@ -11,7 +11,7 @@ const displayCards = cards => {
     cardContainer1.textContent ='';
 
     cards.posts.forEach((card) => {
-        console.log(card);
+        // console.log(card);
 
         const cardContainer = document.createElement('div');
         cardContainer.classList = `bg-[#797DFC1A] rounded-sm p-5`;
@@ -64,3 +64,39 @@ const toggleLoadingSpinner = (isLoading) => {
 
 // loadCard();
 /**************************************************************************************** */
+
+  
+  const loadPhone = async (searchText , isShowAll) => {
+    const res = await fetch('https://openapi.programming-hero.com/api/retro-forum/latest-posts');
+    const data = await res.json();
+    const phones = data;
+    console.log(phones);
+    // displayPhone(phones);
+}
+const phoneContainer1 = document.getElementById('phone-cont');
+phones.posts.forEach((phones) => {
+  console.log(phones) 
+
+  const phoneContainer  = document.createElement('div');
+  phoneContainer.classList = `card w-96 bg-base-100 shadow-xl`
+  phoneContainer.innerHTML = `
+  <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+        <div class="card-body">
+          <p><img src="images/Vector.png" alt=""><span> 29 January,2024</span></p>
+          <h2 class="card-title">
+            Shoes!
+            <div class="badge badge-secondary">NEW</div>
+          </h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions">
+             <img src="images/Ellipse 1.png" alt="">Fashion <br>Products</div>
+          </div>
+  `;
+phoneContainer1.appendChild(phoneContainer)
+
+
+});
+
+
+    
+loadPhone();
