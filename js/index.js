@@ -16,7 +16,7 @@ const displayCards = cards => {
         cardContainer.innerHTML = `
          <div class="flex ml-8">
           <div>
-            <img  src="images/Status.png" alt=""><span><img src="images/Rectangle 4.png" alt=""></span>
+            <img  src="images/Status.png" alt=""><span><img class="w-20" src="${card.image}" alt=""></span>
           </div>
           <div class="bg-[ #797DFC1A] ml-5">
             <P class="text-xl mt-5">${card.category}<span class="ml-6">${card.author.name}</span></P>
@@ -41,3 +41,4 @@ const displayCards = cards => {
 }
 
 loadCard();
+/**************************************************************************************** */
