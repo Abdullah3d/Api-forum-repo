@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Assignment-6-recheck</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-6-recheck</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/77a5e78dbc.js" crossorigin="anonymous"></script>
-    <!-- daisy ui and tailwind -->
+    <!-- daisy ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- custom configuration -->
@@ -21,8 +22,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        'pm-color': '#797DFC',
-                        'pm-text': '#12132D',
+                        'bm-main': '#797DFC',
+                        'br-text': '#12132D',
                     }
                 }
             }
@@ -30,130 +31,223 @@
     </script>
     <!--  -->
     <style>
-      .mulish {
-          font-family: "Mulish", sans-serif;
-      }
+        .mulish {
+            font-family: "Mulish", sans-serif;
+        }
 
-      .inter {
-          font-family: "Inter", sans-serif;
-      }
-  </style>
+        .inter {
+            font-family: "Inter", sans-serif;
+        }
+    </style>
 </head>
+
 <body>
-  <body class="mulish text-pm-text">
-    <header class="container mx-auto max-w-[1440px] w-[95%] sm:mb-[100px] mb-12">
-        <div class="max-w-[1170px] mx-auto">
-            <!-- navigation -->
-            <div class="sm:my-12 my-6 md:block flex justify-between items-center">
-                <div class="flex justify-between items-center">
-                    <div class="">
-                        <div class="dropdown">
-                            <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M4 6h16M4 12h8m-8 6h16" />
-                                </svg>
-                            </div>
-                            <ul tabindex="0"
-                                class="menu menu-sm dropdown-content mt-3 *:mb-5 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                                <li class="flex justify-start items-center flex-row">
-                                    <i class="fa-solid fa-house"></i>
-                                    <a class="">Home</a>
-                                </li>
-                                <li class="flex justify-start items-center flex-row">
-                                    <i class="fa-solid fa-pen"></i>
-                                    <a>Tooltip</a>
-                                </li>
-                                <li class="flex justify-start items-center flex-row">
-                                    <i class="fa-solid fa-user-plus"></i>
-                                    <a>Add User</a>
-                                </li>
-                                <li class="flex justify-start items-center flex-row">
-                                    <i class="fa-solid fa-flag"></i>
-                                    <a>Region</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <a class='sm:text-4xl text-3xl font-black' href='/'>MeTro</a>
-                    </div>
-                    <div class="hidden md:flex items-center">
-                        <ul
-                            class="menu menu-horizontal px-1 space-x-3 *:border border-solid border-pm-text border-opacity-50">
-                            <span data-tip="Home"
-                                class="tooltip rounded-full bg-pm-text bg-opacity-[0.03] px-5 py-4 text-xl">
-                                <div class="">
-                                    <i class="fa-solid fa-house"></i>
+
+    <body class="mulish text-br-text">
+        <header class="container mx-auto max-w-[1440px] w-[95%] sm:mb-[100px] mb-12">
+            <div class="max-w-[1170px] mx-auto">
+                <!-- navigation -->
+                <div class="sm:my-12 my-6 md:block flex justify-between items-center">
+                    <div class="flex justify-between items-center">
+                        <div class="">
+                            <div class="dropdown">
+                                <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M4 6h16M4 12h8m-8 6h16" />
+                                    </svg>
                                 </div>
-                            </span>
-                            <span data-tip="Tooltip"
-                                class="rounded-full tooltip bg-pm-text bg-opacity-[0.03] px-5 py-4 text-xl">
-                                <i class="fa-solid fa-pen"></i>
-                            </span>
-                            <span data-tip="Add User"
-                                class="tooltip rounded-full bg-pm-text bg-opacity-[0.03] px-5 py-4 text-xl"><i
-                                    class="fa-solid fa-user-plus"></i></span>
-                            <span data-tip="Region"
-                                class="tooltip rounded-full bg-pm-text bg-opacity-[0.03] px-6 py-4 text-xl"><i
-                                    class="fa-solid fa-flag"></i></span>
-                        </ul>
-                        <button
-                            class="text-xl font-bold bg-pm-color ml-6 text-white sm:px-10 rounded-[50px] py-4 px-5">Sign
-                            In</button>
+                                <ul tabindex="0"
+                                    class="menu menu-sm dropdown-content mt-3 *:mb-5 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                    <li class="flex justify-start items-center flex-row">
+                                        <i class="fa-solid fa-house"></i>
+                                        <a class="">Home</a>
+                                    </li>
+                                    <li class="flex justify-start items-center flex-row">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <a>Tooltip</a>
+                                    </li>
+                                    <li class="flex justify-start items-center flex-row">
+                                        <i class="fa-solid fa-user-plus"></i>
+                                        <a>Add User</a>
+                                    </li>
+                                    <li class="flex justify-start items-center flex-row">
+                                        <i class="fa-solid fa-flag"></i>
+                                        <a>Region</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a class='sm:text-4xl text-3xl font-black' href='/'>MeTro</a>
+                        </div>
+                        <div class="hidden md:flex items-center">
+                            <ul
+                                class="menu menu-horizontal px-1 space-x-3 *:border border-solid border-br-text border-opacity-50">
+                                <span data-tip="Home"
+                                    class="tooltip rounded-full bg-br-text bg-opacity-[0.03] px-5 py-4 text-xl">
+                                    <div class="">
+                                        <i class="fa-solid fa-house"></i>
+                                    </div>
+                                </span>
+                                <span data-tip="Tooltip"
+                                    class="rounded-full tooltip bg-br-text bg-opacity-[0.03] px-5 py-4 text-xl">
+                                    <i class="fa-solid fa-pen"></i>
+                                </span>
+                                <span data-tip="Add User"
+                                    class="tooltip rounded-full bg-br-text bg-opacity-[0.03] px-5 py-4 text-xl"><i
+                                        class="fa-solid fa-user-plus"></i></span>
+                                <span data-tip="Region"
+                                    class="tooltip rounded-full bg-br-text bg-opacity-[0.03] px-6 py-4 text-xl"><i
+                                        class="fa-solid fa-flag"></i></span>
+                            </ul>
+                            <button
+                                class="text-xl font-bold bg-bm-main ml-6 text-white sm:px-10 rounded-[50px] py-4 px-5">Sign
+                                In</button>
+                        </div>
+                    </div>
+                    <button
+                        class="sm:text-xl text-base md:hidden font-bold bg-bm-main ml-6 text-white sm:px-10 rounded-[50px] py-4 px-5">Sign
+                        In</button>
+                </div>
+                <!-- nav end -->
+                <!-- banner -->
+                <div style="background-image: url('images/bgbanner.png');"
+                    class="bg-center bg-br-text bg-cover bg-no-repeat rounded-[32px]">
+                    <div
+                        class="lg:p-[100px] sm:p-[50px] p-6 lg:gap-0 gap-10 flex justify-between lg:items-end items-center lg:flex-row flex-col">
+                        <div>
+                            <h1
+                                class="text-white xl:text-[64px] lg:text-left text-center sm:text-[50px] text-[35px] font-black max-w-[630px]">
+                                Welcome to the <br class="lg:block hidden"><span class="text-bm-main">MeTro</span> Forum
+                            </h1>
+                            <p
+                                class="text-white text-opacity-80 lg:text-left text-center lg:mx-0 mx-auto font-medium xl:text-xl sm:text-base text-sm max-w-[350px] mt-5 mb-8">
+                                MeTro Forum: Advancing regenerative medicine, together we thrive.
+                                <span
+                                    class="lg:mx-0 mx-auto sm:max-w-[400px] px-1 sm:max-h-[56px] h-[100px] bg-white sm:rounded-[50px] rounded-[32px] flex sm:justify-between justify-center items-center sm:flex-row flex-col sm:gap-0">
+                                    <input id="input-text" placeholder="Search category" type="text"
+                                        class="sm:text-left sm:text-base text-xs text-center sm:pl-5 font-semibold w-3/5 h-[50px] border-none outline-none bg-white rounded-[50px]">
+                                    <button id="input-container"
+                                        class="text-white bg-bm-main font-bold sm:text-xl text-base px-7 py-2 rounded-[48px]">Search</button>
+                                </span>
+                        </div>
+                        <div class="xl:w-[375px] lg:w-[300px] w-full">
+                            <div class="sm:p-12 p-6 bg-white rounded-[32px] *:list-none sm:space-y-6 space-y-3">
+                                <li
+                                    class="flex justify-between items-center text-br-text font-semibold xl:text-2xl sm:text-xl text-base text-opacity-80">
+                                    <span>Registered Users</span><span>01</span>
+                                </li>
+                                <li
+                                    class="flex justify-between items-center text-br-text font-semibold xl:text-2xl sm:text-xl text-base text-opacity-80">
+                                    <span>Forum</span><span>05</span>
+                                </li>
+                                <li
+                                    class="flex justify-between items-center text-br-text font-semibold xl:text-2xl sm:text-xl text-base text-opacity-80">
+                                    <span>Topics</span><span>01</span>
+                                </li>
+                                <li
+                                    class="flex justify-between items-center text-br-text font-semibold xl:text-2xl sm:text-xl text-base text-opacity-80">
+                                    <span>Replies</span><span>01</span>
+                                </li>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <button
-                    class="sm:text-xl text-base md:hidden font-bold bg-pm-color ml-6 text-white sm:px-10 rounded-[50px] py-4 px-5">Sign
-                    In</button>
             </div>
-            <!-- nav end -->
-            <!-- banner -->
-            <div style="background-image: url('images/bgbanner.png');"
-                class="bg-center bg-pm-text bg-cover bg-no-repeat rounded-[32px]">
-                <div
-                    class="lg:p-[100px] sm:p-[50px] p-6 lg:gap-0 gap-10 flex justify-between lg:items-end items-center lg:flex-row flex-col">
-                    <div>
-                        <h1
-                            class="text-white xl:text-[64px] lg:text-left text-center sm:text-[50px] text-[35px] font-black max-w-[630px]">
-                            Welcome to the <br class="lg:block hidden"><span class="text-pm-color">MeTro</span> Forum
+        </header>
+        <main class="container mx-auto max-w-[1440px] w-[95%]">
+            <div class="max-w-[1170px] mx-auto">
+                <section class="sm:mb-[100px] mb-12">
+                    <div class="text-center mx-auto max-w-[690px]">
+                        <h1 class="font-black sm:text-[40px] text-[30px]">Let’s Discuss</h1>
+                        <p class="inter sm:text-lg text-base text-br-text text-opacity-60 sm:mt-6 mt-4 sm:mb-12 mb-7">
+                            Let's discuss the latest breakthroughs and innovations in regenerative medicine and
+                            transformative healthcare practices.</p>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <span id="loading-spinner" class="loading loading-dots text-bm-main w-[80px] h-[80px]"></span>
+                    </div>
+                    <div
+                        class="flex justify-center lg:items-start items-center lg:flex-row flex-col-reverse lg:gap-6 gap-10">
+                        <!--  -->
+                        <div id="display-card" class="space-y-6">
+                        </div>
+                        <!-- alert part -->
+                        <div role="alert" id="alert-part"
+                            class="alert alert-error bg-[#F3F3F5] border-none py-[26px] hidden rounded-3xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-red-600 stroke-current shrink-0 h-8 w-8"
+                                fill="none" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span class="text-lg font-semibold text-red-600">This category is not available !</span>
+                        </div>
+                        <!-- side card -->
+                        <div id="side-card" class="lg:max-w-[375px] w-full h-fit bg-[#F3F3F5] rounded-3xl p-6">
+                            <div class="flex justify-between items-center mb-2 gap-3">
+                                <h3 class="text-br-text text-xl font-bold">Title</h3>
+                                <p class="inter text-br-text text-opacity-50 font-semibold"><i
+                                        class="fa-solid fa-check text-[#3DCE09] text-xl mr-[6px]"></i>Mark as read
+                                    (<span id="title">0</span>)</p>
+                            </div>
+                            <div id="cards-container">
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section
+                    class="flex sm:justify-between justify-center items-center sm:flex-row flex-col bg-br-text sm:mb-[100px] mb-12 rounded-[32px]">
+                    <div class="sm:pl-24 sm:px-0 px-5 sm:py-24 py-10">
+                        <h1 class="font-black lg:text-[40px] sm:text-left text-center text-3xl text-white">Join Our
+                            Forum
                         </h1>
                         <p
-                            class="text-white text-opacity-80 lg:text-left text-center lg:mx-0 mx-auto font-medium xl:text-xl sm:text-base text-sm max-w-[350px] mt-5 mb-8">
-                            Share your favorite opinion and win and wp forum coffee mug!</p>
-                        <span
-                            class="lg:mx-0 mx-auto sm:max-w-[400px] px-1 sm:max-h-[56px] h-[100px] bg-white sm:rounded-[50px] rounded-[32px] flex sm:justify-between justify-center items-center sm:flex-row flex-col sm:gap-0">
-                            <input id="input-text" placeholder="Search category" type="text"
-                                class="sm:text-left sm:text-base text-xs text-center sm:pl-5 font-semibold w-3/5 h-[50px] border-none outline-none bg-white rounded-[50px]">
-                            <button id="input-container"
-                                class="text-white bg-pm-color font-bold sm:text-xl text-base px-7 py-2 rounded-[48px]">Search</button>
-                        </span>
+                            class="text-white text-opacity-80 lg:text-lg sm:text-left text-center sm:mx-0 text-sm mt-4 mb-8 lg:max-w-[650px] max-w-[400px] mx-auto">
+                            Join our dynamic forum and engage in transformative discussions on regenerative medicine
+                            breakthroughs.</p>
+                        <button
+                            class="font-bold lg:text-xl text-base sm:mx-0 block mx-auto text-white bg-bm-main rounded-[50px] lg:px-10 px-6 py-4">Registered
+                            Now</button>
                     </div>
-                    <div class="xl:w-[375px] lg:w-[300px] w-full">
-                        <div class="sm:p-12 p-6 bg-white rounded-[32px] *:list-none sm:space-y-6 space-y-3">
-                            <li
-                                class="flex justify-between items-center text-pm-text font-semibold xl:text-2xl sm:text-xl text-base text-opacity-80">
-                                <span>Registered Users</span><span>01</span>
-                            </li>
-                            <li
-                                class="flex justify-between items-center text-pm-text font-semibold xl:text-2xl sm:text-xl text-base text-opacity-80">
-                                <span>Forum</span><span>05</span>
-                            </li>
-                            <li
-                                class="flex justify-between items-center text-pm-text font-semibold xl:text-2xl sm:text-xl text-base text-opacity-80">
-                                <span>Topics</span><span>01</span>
-                            </li>
-                            <li
-                                class="flex justify-between items-center text-pm-text font-semibold xl:text-2xl sm:text-xl text-base text-opacity-80">
-                                <span>Replies</span><span>01</span>
-                            </li>
-                        </div>
+                    <div class="sm:mr-7">
+                        <img class="min-w-full" src="images/joinforum.png" alt="picture">
                     </div>
-                </div>
+                </section>
+                <section class="sm:mb-[100px] mb-12">
+                    <div class="text-center mx-auto max-w-[690px]">
+                        <h1 class="font-black sm:text-[40px] text-[30px]">Latest Posts</h1>
+                        <p class="inter sm:text-lg text-base text-br-text text-opacity-60 sm:mt-6 mt-4 sm:mb-12 mb-7">
+                            Stay updated with the latest posts on regenerative medicine breakthroughs and healthcare
+                            innovations.</p>
+                    </div>
+                    <div id="show-container" class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
+                    </div>
+                </section>
             </div>
-        </div>
-    </header>
-    
-  <!-- js -->
-  <script src="js/index.js"></script>
-</body>
+
+        </main>
+        <footer class="text-center bg-[#FAFAFA]">
+            <div class="max-w-[1170px] mx-auto py-10 px-5 sm:py-[100px]">
+                <h1 class="sm:text-4xl text-3xl font-black">MeTro</h1>
+                <p class="mt-6 mb-8 max-w-[605px] mx-auto text-opacity-70 text-br-text">
+                    MeTro, a pioneering forum, fosters collaboration, innovation, and knowledge exchange in the realm of regenerative medicine and healthcare.</p>
+                <div class="flex justify-center items-center gap-6 sm:mb-12 mb-7">
+                    <i
+                        class="fa-brands fa-twitter text-2xl text-section-heading hover:text-bm-main duration-300 hover:scale-[1.2]"></i>
+                    <i
+                        class="fa-brands fa-facebook-f text-2xl text-section-heading hover:text-bm-main duration-300 hover:scale-[1.2]"></i>
+                    <i
+                        class="fa-brands fa-instagram text-2xl text-section-heading hover:text-bm-main duration-300 hover:scale-[1.2]"></i>
+                    <i
+                        class="fa-brands fa-github text-2xl text-section-heading hover:text-bm-main duration-300 hover:scale-[1.2]"></i>
+                </div>
+                <hr>
+                <span class="font-light text-opacity-50 text-br-text mt-7 block sm:mt-12">2024, All Rights
+                    Reserved.</span>
+            </div>
+        </footer>
+        <!-- js -->
+        <script src="js/index.js"></script>
+    </body>
 </html>
