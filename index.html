@@ -40,6 +40,119 @@
   </style>
 </head>
 <body>
+  <body class="mulish text-pm-text">
+    <header class="container mx-auto max-w-[1440px] w-[95%] sm:mb-[100px] mb-12">
+        <div class="max-w-[1170px] mx-auto">
+            <!-- navigation -->
+            <div class="sm:my-12 my-6 md:block flex justify-between items-center">
+                <div class="flex justify-between items-center">
+                    <div class="">
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content mt-3 *:mb-5 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                <li class="flex justify-start items-center flex-row">
+                                    <i class="fa-solid fa-house"></i>
+                                    <a class="">Home</a>
+                                </li>
+                                <li class="flex justify-start items-center flex-row">
+                                    <i class="fa-solid fa-pen"></i>
+                                    <a>Tooltip</a>
+                                </li>
+                                <li class="flex justify-start items-center flex-row">
+                                    <i class="fa-solid fa-user-plus"></i>
+                                    <a>Add User</a>
+                                </li>
+                                <li class="flex justify-start items-center flex-row">
+                                    <i class="fa-solid fa-flag"></i>
+                                    <a>Region</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class='sm:text-4xl text-3xl font-black' href='/'>MeTro</a>
+                    </div>
+                    <div class="hidden md:flex items-center">
+                        <ul
+                            class="menu menu-horizontal px-1 space-x-3 *:border border-solid border-pm-text border-opacity-50">
+                            <span data-tip="Home"
+                                class="tooltip rounded-full bg-pm-text bg-opacity-[0.03] px-5 py-4 text-xl">
+                                <div class="">
+                                    <i class="fa-solid fa-house"></i>
+                                </div>
+                            </span>
+                            <span data-tip="Tooltip"
+                                class="rounded-full tooltip bg-pm-text bg-opacity-[0.03] px-5 py-4 text-xl">
+                                <i class="fa-solid fa-pen"></i>
+                            </span>
+                            <span data-tip="Add User"
+                                class="tooltip rounded-full bg-pm-text bg-opacity-[0.03] px-5 py-4 text-xl"><i
+                                    class="fa-solid fa-user-plus"></i></span>
+                            <span data-tip="Region"
+                                class="tooltip rounded-full bg-pm-text bg-opacity-[0.03] px-6 py-4 text-xl"><i
+                                    class="fa-solid fa-flag"></i></span>
+                        </ul>
+                        <button
+                            class="text-xl font-bold bg-pm-color ml-6 text-white sm:px-10 rounded-[50px] py-4 px-5">Sign
+                            In</button>
+                    </div>
+                </div>
+                <button
+                    class="sm:text-xl text-base md:hidden font-bold bg-pm-color ml-6 text-white sm:px-10 rounded-[50px] py-4 px-5">Sign
+                    In</button>
+            </div>
+            <!-- nav end -->
+            <!-- banner -->
+            <div style="background-image: url('images/bgbanner.png');"
+                class="bg-center bg-pm-text bg-cover bg-no-repeat rounded-[32px]">
+                <div
+                    class="lg:p-[100px] sm:p-[50px] p-6 lg:gap-0 gap-10 flex justify-between lg:items-end items-center lg:flex-row flex-col">
+                    <div>
+                        <h1
+                            class="text-white xl:text-[64px] lg:text-left text-center sm:text-[50px] text-[35px] font-black max-w-[630px]">
+                            Welcome to the <br class="lg:block hidden"><span class="text-pm-color">MeTro</span> Forum
+                        </h1>
+                        <p
+                            class="text-white text-opacity-80 lg:text-left text-center lg:mx-0 mx-auto font-medium xl:text-xl sm:text-base text-sm max-w-[350px] mt-5 mb-8">
+                            Share your favorite opinion and win and wp forum coffee mug!</p>
+                        <span
+                            class="lg:mx-0 mx-auto sm:max-w-[400px] px-1 sm:max-h-[56px] h-[100px] bg-white sm:rounded-[50px] rounded-[32px] flex sm:justify-between justify-center items-center sm:flex-row flex-col sm:gap-0">
+                            <input id="input-text" placeholder="Search category" type="text"
+                                class="sm:text-left sm:text-base text-xs text-center sm:pl-5 font-semibold w-3/5 h-[50px] border-none outline-none bg-white rounded-[50px]">
+                            <button id="input-container"
+                                class="text-white bg-pm-color font-bold sm:text-xl text-base px-7 py-2 rounded-[48px]">Search</button>
+                        </span>
+                    </div>
+                    <div class="xl:w-[375px] lg:w-[300px] w-full">
+                        <div class="sm:p-12 p-6 bg-white rounded-[32px] *:list-none sm:space-y-6 space-y-3">
+                            <li
+                                class="flex justify-between items-center text-pm-text font-semibold xl:text-2xl sm:text-xl text-base text-opacity-80">
+                                <span>Registered Users</span><span>01</span>
+                            </li>
+                            <li
+                                class="flex justify-between items-center text-pm-text font-semibold xl:text-2xl sm:text-xl text-base text-opacity-80">
+                                <span>Forum</span><span>05</span>
+                            </li>
+                            <li
+                                class="flex justify-between items-center text-pm-text font-semibold xl:text-2xl sm:text-xl text-base text-opacity-80">
+                                <span>Topics</span><span>01</span>
+                            </li>
+                            <li
+                                class="flex justify-between items-center text-pm-text font-semibold xl:text-2xl sm:text-xl text-base text-opacity-80">
+                                <span>Replies</span><span>01</span>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
   <!-- js -->
   <script src="js/index.js"></script>
 </body>
